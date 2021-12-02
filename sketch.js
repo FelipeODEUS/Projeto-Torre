@@ -128,3 +128,10 @@ function mouseDragged(){
 function mouseReleased(){
   slingshot.fly();
 }
+
+function keyPressed(){
+  if(keyCode === 32 ){
+      Matter.Body.setPosition(this.ball, {x: 200 , y: 200});
+      slingShot.attach(this.polygon);
+  }
+}
